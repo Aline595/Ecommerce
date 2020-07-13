@@ -1,0 +1,340 @@
+/*Fonte do titulo*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/*padão para tudo*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;/*padding anexa na largura e altura e não soma*/
+    margin-block-end: 2px;
+    margin-block-start: 2px;
+}
+
+.foto{
+    max-width:200px;
+    max-height:160px;
+    width: auto;
+    height: auto;
+    min-height: 150px;
+}
+
+
+body{
+    font: 400 14px Verdana, sans-serif; /*tamanho sem bordinha que dobra*/ 
+    line-height: 1.6;/*autura maxima da linha*/
+}
+
+input, button{
+    font: 400 18px Verdana, sans-serif;
+}
+
+button{
+    cursor: pointer;/*mãozinha no botão*/
+}
+
+form input{ /*todo input de formulario*/
+    width: 100%;
+    height: 60px;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 0 24px;
+}
+header{
+    width: 100%;
+    margin: 0 auto;
+ 
+}
+form button{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(236, 87, 107);
+    color: rgb(63, 55, 55);
+    border: 0;
+    border-radius: 8px;
+    font-weight: 700;
+    margin-top: 16px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    transition: filter 0.2s;
+}
+/*hover == quando passar o maouse perder um pouco de cor*/
+form button:hover{
+    filter: brightness(90%);
+}
+
+/*
+MENU
+-------------------------------------------------------------------------------
+*/
+.menu{
+	width:100%;/*tamanho*/
+	height:50px;
+	background-color: #222;/*Mudar a cor do menu*/
+	}
+	
+.menu>ul{
+	list-style:none;	
+	}
+.menu ul li{
+		width:33%;
+		float:left;
+	}
+
+.menu a{
+    color:#aaa;/*Mudar a cor da letra do menu*/
+    font-family:Verdana;
+	padding:15px;
+	display:block;
+	text-decoration: none;
+	background-color: #222;
+	text-align:center;
+	}
+
+.menu a:hover{
+    background-color:#f4f4f4;
+    color: black;
+	}
+/*-------------------------------------------------------------------------*/
+
+#corpo{
+ 
+    margin-left: 10%;
+    margin: 0 auto;/*centraliza conteudo*/
+
+    display: flex;/*coloca itens ao lado um do outro*/
+    flex-direction: column;/*muda display para ficarem um acima do outro*/
+    align-items: center;/*alinha no centro na vertical*/
+    justify-content: center;/*alinha no centro na horizontal*/
+
+    background-color: rgb(248, 234, 233);
+    width: 100%;
+}
+
+#corpo form{
+    width: 80%;
+}
+#corpo #inputs_form{
+    margin-left: 20%;
+    margin-block-end: 4%;
+}
+/*----------cabecalho-----------------*/
+#cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin-top: 1%;
+    font-family: Pacifico;
+    font-size: 110%;
+}
+
+#cabecalho h1{
+    text-align: center;
+    
+}
+
+
+/********icones*************************/
+
+#icones_cabecalho{
+        
+    transform: translate( -50%, -50%);
+    margin-left: 10%;    
+        
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#icones_cabecalho a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: whitesmoke;
+    margin: 0 3%;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    font-size: 23px;
+    text-decoration: none;
+    
+}
+
+#icones_cabecalho a:hover{
+    background-color: turquoise;
+}
+
+#icones_cabecalho i{
+    transition: 0.5s all;
+}
+
+#icones_cabecalho a:hover > i{
+    transform: scale(1.4)rotate(23deg);
+}
+
+
+
+footer{
+    background-color: white;
+    color: rgb(44, 44, 73);
+    padding: 10px 20px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+
+footer h4{
+    font-size: 90%;
+}
+
+
+#icones{
+    /*position: absolute;*/
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    margin-top: 30px;
+    margin-left: 50%;    
+        
+}
+
+#icones a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: whitesmoke;
+    margin: 0 3px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    font-size: 23px;
+    text-decoration: none;
+}
+
+#icones a:hover{
+    background-color: turquoise;
+}
+
+#icones i{
+    transition: 0.5s all;
+}
+
+#icones a:hover > i{
+    transform: scale(1.4)rotate(26deg);
+}
+
+.teste{
+    display: flex;
+    flex-direction: column;
+    margin-top: -100px;
+}
+
+/*-------------------SLIDE DE FOTOS--------------------------*/
+
+.slider {
+     display: block;
+     height: 293px;
+     width: 600px;
+     margin: auto;
+     margin-top: 0px;
+     position: relative;
+}
+
+.slider li {
+     list-style: none;
+     position: absolute;
+}
+
+.slider img {
+     margin: auto;
+     height: 100%;
+     width: 100%;
+     vertical-align: top;
+} 
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+     background-color: #000;
+     bottom: 30px;
+     cursor: pointer;
+     display: block;
+     height: 10px;
+     position: absolute;
+     width: 10px;
+     z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+     left: 10px;
+ }
+
+ .slider li:nth-child(2) label {
+     left: 40px;
+ }
+
+ .slider li:nth-child(3) label {
+     left: 70px;
+ }
+
+ .slider img {
+     opacity: 0;
+     visibility: hidden;
+ }
+
+ .slider li input:checked ~ img {
+     opacity: 1;
+     visibility: visible;
+     z-index: 10;
+ }  
+
+
+ /* media query */
+
+@media (max-width: 600px) {
+    /*.logo{
+        display: none;
+    }
+    #icones_cabecalho #login{
+       display: none;
+    }
+    /*p{
+       font-size: 130%;
+    }*/
+
+    #icones a{
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        color: #000;
+    }
+    .col-lg-6 h1{
+        font-size: 116%;
+    }
+    #slogan{
+        font-size: 120%;
+    }
+    #pagamento img{
+        width: 80%;
+    }
+    #corpo hr{
+        display: none;
+    }
+}

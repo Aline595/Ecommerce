@@ -1,0 +1,105 @@
+.container{
+    margin-top: 2%;
+} 
+
+
+.form-group p{
+    font: 400 18px Verdana, sans-serif;
+    margin-top: 5%;
+}
+
+.col-md-6{
+    display: flex;/*coloca itens ao lado um do outro*/
+    flex-direction: column;/*muda display para ficarem um acima do outro*/
+    align-items: center;/*alinha no centro na vertical*/
+    justify-content: center;
+}
+
+.container form .form-group{
+    width: 100%;
+    margin-left: 30%;
+    border: 0;
+    padding: 0;
+}
+
+.container form button{
+    width: 100%;
+    margin-left: 30%;
+    background-color: rgb(236, 87, 107);
+    border: none;
+}
+
+.container form button:hover{
+    opacity: 0.8;
+    background-color: rgb(236, 87, 107);
+}
+
+.col-md-6 p{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-md-6 a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    color: black;
+}
+
+
+.popup{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 350px;
+    height: 160px;
+    padding: 15px;
+    border: solid 1px gray;
+    background-color: rgb(243, 243, 243);
+    display: none;
+    border-radius: 8px;
+}
+
+.popup div {
+    
+    display: flex;
+    align-items: center;/*alinha no centro na vertical*/
+    justify-content: center;/*alinha no centro na horizontal*/
+}
+
+.popup #btfechar{
+    position: absolute;
+    margin-top: -30%;
+    margin-right: 0;
+    
+}
+
+.popup button{
+    font: 400 18px Verdana, sans-serif;
+    background-color: rgb(236, 87, 107);
+    color: rgb(63, 55, 55);
+    border-color: rgb(236, 87, 107);
+    
+}
+
+#voltar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 640px) { 
+    .col-md-6 p{
+        margin-top: 5%;
+
+    }
+    
+} 
