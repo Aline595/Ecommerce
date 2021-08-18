@@ -31,3 +31,7 @@ Ecommerce de venda de vestidos de festa chamada Vestido ideal.
 - Página de perfil  
 ![perfil](https://user-images.githubusercontent.com/56769013/87338747-04e39000-c51c-11ea-9f4d-74f4a6714142.png)  
 
+## Requisitos
+
+Ao utilizar o projeto é necessario adicionar a pasta do bootstratp no diretorio 
+``Ecommerce/Site/frontend/``
